@@ -217,7 +217,7 @@ img.portfolio-image {
 }
 
 #chicago {
-	background-image: url("../images/chicago.JPG");
+	background-image: url("./../images/chicago.JPG");
 }
 
 #england {
