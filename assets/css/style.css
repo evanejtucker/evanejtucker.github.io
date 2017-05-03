@@ -1,0 +1,243 @@
+
+.header {
+	width: 100%;
+	height: 90px;
+	background: #ffffff;
+	border-bottom: solid 5px #cccccc;
+	margin-bottom: 20px;
+	position: relative;
+	top: 0;
+}
+
+.nested-header {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#name-tag {
+	float: left;
+	background: #4aaaa5;
+	color: #ffffff;
+	width: 25%;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	font-size: 1.3em;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+#navigation {
+	position: absolute;
+	right: 50px;
+	margin-top: 35px;
+	font-size: 1.3em;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
+.container {
+	clear: both;
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+#main {
+	float: left;
+	width: 650px;
+	background-color: #ffffff;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	font-size: 1.3em;
+}
+
+#contact-info {
+	float: left;
+	width: 270px;
+	margin-left:20px;
+	padding-bottom: 10px;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+#bio-image {
+	float: left;
+	width: 200px;
+	height: 300px;
+	padding-right: 15px;
+	padding-top: 15px;
+}
+
+body {
+	background-image: url("../images/upfeathers.jpg");
+}
+
+h2, h3{
+	color: #4aaaa5;
+	font-size: 1.5em;
+}
+
+p.bio-txt {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+}
+
+a {
+	text-decoration: none;
+	color: #777777;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img.icon {
+	height: 60px;
+	width: 60px;
+	padding-left:5px;
+	padding-right: 5px;
+}
+
+
+.footer {
+	clear: both;
+	position: relative;
+	bottom: -200px;
+	width: 100%;
+	height: 50px;
+	background: #666666;
+	border-top: solid 5px #4aaaa5;
+	text-align: center;
+	padding-top: 20px;
+	color: lightgrey;
+
+}
+
+
+/* form specific tags */
+
+input {
+	width: 100%;
+}
+
+input.submit {
+	width: 30%;
+	background: #4aaaa5;
+	color: #ffffff;
+	font-size: 1em;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	margin-top: 15px;
+}
+
+p.form-txt {
+	color: #777777;
+}
+
+form {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+textarea {
+	width: 100%;
+}
+
+/* portfolio specific tags*/
+
+img.portfolio-image {
+	height: 250px;
+	width: 250px;
+	margin-left: 50px;
+}
+
+.portfolio-link {
+	float: left;
+	position: relative;
+	margin-top: 0;
+}
+
+.row-1 {
+	position: relative;
+	clear: both;
+	width: 100%;
+	height: 200px;
+	background: #ffffff;
+	margin-top: 25px;
+}
+
+
+.row-2 {
+	position: relative;
+	clear: both;
+	width: 100%;
+	height: 200px;
+	background: #ffffff;
+	margin-top: 50px;
+}
+
+.row-3 {
+	position: relative;
+	clear: both;
+	width: 100%;
+	height: 200px;
+	background: #ffffff;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+.portfolio-tag{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	color: #ffffff;
+	background: #4aaaa5;
+	bottom: 0px;
+	font-size: 1.3em;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-top: solid 2px #ffffff;
+}
+
+.portfolio-badge {
+	float: left;
+	position: relative;
+	height: 200px;
+	width: 250px;
+	margin-left: 50px;
+	background-size: 100% auto;
+}
+
+#chicago {
+	background-image: url("../images/chicago.jpg");
+}
+
+#england {
+	background-image: url("../images/england.jpg");
+}
+
+#hawaii {
+	background-image: url("../images/hawaii.jpg");
+}
+
+#new-york {
+	background-image: url("../images/new-york.jpg");
+}
+
+#gambier {
+	background-image: url("../images/gambier_island.jpg");
+}
+
+a.p-link {
+	color: #ffffff;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+
+}
