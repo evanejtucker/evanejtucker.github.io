@@ -17,10 +17,19 @@ html, body {
     min-height: 100%;
 }
 
+#light-text {
+    color: $white-color;
+    opacity: 1.0;
+}
+
+#dark-text {
+    color: $dark-grey;
+    opacity: 1.0;
+}
 
 // header section
  #header {
-    background-image: url('../images/mountain.JPG');
+    background-image: url($main-header);
     background-size: cover;
     height: 700px;
     width: 100%;
@@ -28,7 +37,7 @@ html, body {
 
 @media only screen and (max-width: 400px) {
     #header {
-        background-image: url('../images/mountain3.jpeg');
+        background-image: url($small-header);
         background-size: cover;
         height: 600px;
     }
@@ -38,7 +47,7 @@ html, body {
 //  javascript added styles
 .fade-height {
     height: 50px;
-    opacity: 0.3;
+    opacity: 0.5;
     color: black;
     @include transition(height, 1s);
 }

@@ -12,7 +12,6 @@
 }
 .main-nav .page-title {
   font-family: "Permanent Marker", cursive;
-  color: ghostwhite;
 }
 .main-nav .nav-menu {
   font-family: "Prompt", sans-serif;
@@ -70,6 +69,16 @@ html, body {
   min-height: 100%;
 }
 
+#light-text {
+  color: ghostwhite;
+  opacity: 1;
+}
+
+#dark-text {
+  color: darkslategrey;
+  opacity: 1;
+}
+
 #header {
   background-image: url("../images/mountain.JPG");
   background-size: cover;
@@ -86,7 +95,7 @@ html, body {
 }
 .fade-height {
   height: 50px;
-  opacity: 0.3;
+  opacity: 0.5;
   color: black;
   -webkit-transition: height, 1s;
   /* Safari */
