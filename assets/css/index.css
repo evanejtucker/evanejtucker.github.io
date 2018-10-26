@@ -4,7 +4,7 @@
   padding-left: 15px;
   padding-right: 15px;
   background: steelblue;
-  box-shadow: 0px 3px 5px 0px darkslategray;
+  box-shadow: 0px 3px 5px 0px darkslategrey;
   height: 90px;
   -webkit-transition: height, 1s;
   /* Safari */
@@ -20,10 +20,11 @@
 
 .sidenav {
   width: 150px;
+  background: ghostwhite;
 }
 
 @media only screen and (max-width: 400px) {
-  .page-title {
+  #page-title {
     font-size: 1.7rem;
   }
 }
@@ -78,7 +79,9 @@ html, body {
 
 @media only screen and (max-width: 400px) {
   #header {
-    background-image: url("../images/bergen.JPG");
+    background-image: url("../images/mountain3.jpeg");
+    background-size: cover;
+    height: 600px;
   }
 }
 .fade-height {
