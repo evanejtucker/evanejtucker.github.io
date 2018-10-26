@@ -1,0 +1,5 @@
+
+@mixin transition($property, $time) {
+    -webkit-transition: $property, $time; /* Safari */
+    transition: $property, $time;
+}

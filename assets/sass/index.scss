@@ -1,0 +1,113 @@
+// imports
+@import "mixins";
+
+// variables
+$white-color: ghostwhite;
+$blue-color: steelblue;
+$sharpie-font: 'Permanent Marker', cursive;
+$bold-font: 'Prompt', sans-serif;
+
+// main styles
+html, body {
+    background: $white-color;
+    height: 100%;
+    margin: 0;
+}
+
+#body-container {
+    min-height: 100%;
+}
+
+// navbar style
+.main-nav {
+    position: fixed;
+    top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: $blue-color;
+    box-shadow: 0px 3px 5px 0px darkslategray;
+    height: 90px;
+    @include transition(height, 1s);
+
+    #page-title {
+        font-family: $sharpie-font;
+    }
+
+    .nav-menu {
+        font-family: $bold-font;
+    }
+}
+
+.sidenav {
+    width: 150px;
+}
+
+
+@media only screen and (max-width: 400px) {
+    #page-title {
+        font-size: 1.7rem;
+    }
+}
+
+
+// footer styles
+footer {
+    width: 100%;
+    background: rgb(58, 112, 156);
+    text-align: center;
+    min-height: 60px; 
+    color: $white-color;
+
+    .footer-content {
+        background: $blue-color;
+        height: 30px;
+    }
+
+    ul.links-list  {
+        margin-bottom: 0;
+        padding-bottom: 5px;
+        margin: 0 auto;
+    }
+
+    .links-list li {
+        display: inline;
+        font-size: 1.9rem;
+        margin-right: 5px;
+    }
+
+    .links-list li:hover {
+        font-size: 2.1rem;   
+    }
+
+    .links-list a {
+        color: $white-color;
+        text-decoration: none;
+    }
+
+    #copywrite {
+        margin: 0 auto;
+    }
+
+}
+
+// header section
+ #header {
+    background-image: url('../images/fussen.JPG');
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+ }
+
+@media only screen and (max-width: 400px) {
+    #header {
+        background-image: url('../images/bergen.JPG');
+    }
+}
+
+
+
+//  javascript added styles
+.fade-height {
+    height: 50px;
+    @include transition(height, 1s);
+}
