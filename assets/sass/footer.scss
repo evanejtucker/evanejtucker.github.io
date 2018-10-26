@@ -1,0 +1,43 @@
+
+// imports
+@import "variables";
+
+
+footer {
+    width: 100%;
+    background: rgb(58, 112, 156);
+    text-align: center;
+    min-height: 60px; 
+    color: $white-color;
+
+    .footer-content {
+        background: $blue-color;
+        height: 30px;
+    }
+
+    ul.links-list  {
+        margin-bottom: 0;
+        padding-bottom: 5px;
+        margin: 0 auto;
+    }
+
+    .links-list li {
+        display: inline;
+        font-size: 1.9rem;
+        margin-right: 5px;
+    }
+
+    .links-list li:hover {
+        font-size: 2.1rem;   
+    }
+
+    .links-list a {
+        color: $white-color;
+        text-decoration: none;
+    }
+
+    #copywrite {
+        margin: 0 auto;
+    }
+
+}

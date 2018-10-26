@@ -17,9 +17,9 @@ $(document).ready(function(){
 
     function navScrollEffect() {
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            $(".main-nav").addClass('fade-height')
+            $(".main-nav").addClass('fade-height');
         } else {
-            $(".main-nav").removeClass('fade-height')
+            $(".main-nav").removeClass('fade-height');
         }
     }
 
