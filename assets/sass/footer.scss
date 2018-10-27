@@ -5,13 +5,13 @@
 
 footer {
     width: 100%;
-    background: rgb(58, 112, 156);
+    background: $blue-color;
     text-align: center;
     min-height: 60px; 
     color: $white-color;
 
     .footer-content {
-        background: $blue-color;
+        background: rgb(88, 159, 218);
         height: 30px;
     }
 

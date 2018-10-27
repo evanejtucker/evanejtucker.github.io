@@ -17,12 +17,12 @@ html, body {
     min-height: 100%;
 }
 
-#light-text {
+.light-text {
     color: $white-color;
     opacity: 1.0;
 }
 
-#dark-text {
+.dark-text {
     color: $dark-grey;
     opacity: 1.0;
 }

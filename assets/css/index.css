@@ -29,13 +29,13 @@
 }
 footer {
   width: 100%;
-  background: #3a709c;
+  background: steelblue;
   text-align: center;
   min-height: 60px;
   color: ghostwhite;
 }
 footer .footer-content {
-  background: steelblue;
+  background: #589fda;
   height: 30px;
 }
 footer ul.links-list {
@@ -69,12 +69,12 @@ html, body {
   min-height: 100%;
 }
 
-#light-text {
+.light-text {
   color: ghostwhite;
   opacity: 1;
 }
 
-#dark-text {
+.dark-text {
   color: darkslategrey;
   opacity: 1;
 }
