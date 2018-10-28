@@ -3,7 +3,8 @@
 @import "mixins";
 @import "variables";
 @import "navbar";
-@import "footer"; 
+@import "footer";
+@import "sections";  
 
 
 // main styles
@@ -25,22 +26,6 @@ html, body {
 .dark-text {
     color: $dark-grey;
     opacity: 1.0;
-}
-
-// header section
- #header {
-    background-image: url($main-header);
-    background-size: cover;
-    height: 700px;
-    width: 100%;
- }
-
-@media only screen and (max-width: 400px) {
-    #header {
-        background-image: url($small-header);
-        background-size: cover;
-        height: 600px;
-    }
 }
 
 

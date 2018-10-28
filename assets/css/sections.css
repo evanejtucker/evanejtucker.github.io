@@ -1,0 +1,48 @@
+section#header {
+  background-image: url("../images/mountain.jpg");
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+}
+
+section#about {
+  background: lightsteelblue;
+  height: 300px;
+}
+section#about h1 {
+  margin-top: 0;
+}
+
+section#skills {
+  background: ghostwhite;
+  height: 300px;
+}
+section#skills h1 {
+  margin-top: 0;
+}
+
+section#portfolio {
+  background: lightsteelblue;
+  height: 300px;
+}
+section#portfolio h1 {
+  margin-top: 0;
+}
+
+section#contact {
+  background: ghostwhite;
+  height: 300px;
+}
+section#contact h1 {
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 400px) {
+  section#header {
+    background-image: url("../images/mountain3.jpeg");
+    background-size: cover;
+    height: 600px;
+  }
+}
+
+/*# sourceMappingURL=sections.css.map */

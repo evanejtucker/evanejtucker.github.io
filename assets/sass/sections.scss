@@ -1,0 +1,66 @@
+
+// imports
+@import "variables";
+
+
+// header section
+section#header {
+    background-image: url($main-header);
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+}
+
+
+// about section
+section#about {
+    background: lightsteelblue;
+    height: 300px;
+
+    h1 {
+        margin-top: 0;
+
+    }
+}
+
+// skills section
+section#skills {
+    background: $white-color;
+    height: 300px;
+
+    h1 {
+        margin-top: 0;
+
+    }
+}
+
+// portfolio section
+section#portfolio {
+    background: lightsteelblue;
+    height: 300px;
+
+    h1 {
+        margin-top: 0;
+
+    }
+}
+
+// contact section
+section#contact {
+    background: $white-color;
+    height: 300px;
+
+    h1 {
+        margin-top: 0;
+
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    section#header {
+        background-image: url($small-header);
+        background-size: cover;
+        height: 600px;
+    }
+}
