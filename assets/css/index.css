@@ -1,6 +1,7 @@
 .main-nav {
   position: fixed;
   top: 0;
+  z-index: 100;
   padding-left: 15px;
   padding-right: 15px;
   background: steelblue;
@@ -67,6 +68,10 @@ section.contentSection {
   background: lightsteelblue;
 }
 
+.whiteSection {
+  background: ghostwhite;
+}
+
 section#header {
   background-image: url("../images/mountain.jpg");
   background-size: cover;
@@ -82,7 +87,6 @@ section#about h1 {
 }
 
 section#skills {
-  background: ghostwhite;
   height: 300px;
 }
 section#skills h1 {
@@ -90,7 +94,6 @@ section#skills h1 {
 }
 
 section#portfolio {
-  background: lightsteelblue;
   height: 300px;
 }
 section#portfolio h1 {
@@ -98,11 +101,43 @@ section#portfolio h1 {
 }
 
 section#contact {
-  background: ghostwhite;
   height: 300px;
 }
 section#contact h1 {
   margin-top: 0;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-family: "Spicy Rice", cursive;
+}
+.sectionTitle h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.sectionTitle hr {
+  overflow: visible;
+  /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
+}
+.sectionTitle hr:after {
+  content: "</>";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  z-index: 1;
+}
+.sectionTitle hr.light:after {
+  background: ghostwhite;
+}
+.sectionTitle hr.dark:after {
+  background: lightsteelblue;
 }
 
 @media only screen and (max-width: 400px) {

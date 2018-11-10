@@ -1,6 +1,7 @@
 .main-nav {
   position: fixed;
   top: 0;
+  z-index: 100;
   padding-left: 15px;
   padding-right: 15px;
   background: steelblue;
