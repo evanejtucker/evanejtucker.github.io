@@ -59,6 +59,14 @@ footer #copywrite {
   margin: 0 auto;
 }
 
+section.contentSection {
+  padding-top: 60px;
+}
+
+.colorSection {
+  background: lightsteelblue;
+}
+
 section#header {
   background-image: url("../images/mountain.jpg");
   background-size: cover;
@@ -67,7 +75,6 @@ section#header {
 }
 
 section#about {
-  background: lightsteelblue;
   height: 300px;
 }
 section#about h1 {
@@ -109,6 +116,7 @@ html, body {
   background: ghostwhite;
   height: 100%;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 #body-container {
@@ -127,7 +135,7 @@ html, body {
 
 .fade-height {
   height: 50px;
-  opacity: 0.5;
+  opacity: 0.75;
   color: black;
   -webkit-transition: height, 1s;
   /* Safari */

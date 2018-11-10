@@ -23,19 +23,20 @@ $(document).ready(function(){
         }
     }
 
-    function scrollTo(element) {
-        $("a.nav-link").on('click', function(event) {
-            if (this.hash !== "") {
-              event.preventDefault();
-              var hash = this.hash;
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top - 40
-              }, 800, function(){
-                window.location.hash = hash;
-              });
-            }
-        });
-    }
+    // function scrollTo(element) {
+    //     $("a").on('click', function(event) {
+    //         if (this.hash !== "") {
+    //           event.preventDefault();
+    //           var hash = this.hash;
+    //           var targetOffset = $(hash).offset().top;
+    //           $('html, body').animate({
+    //             scrollTop: targetOffset
+    //           }, 800, function(){
+    //             window.location.hash = hash;
+    //           });
+    //         }
+    //       });
+    // }
 
 
     // main process
@@ -43,7 +44,7 @@ $(document).ready(function(){
     
     window.onscroll = function() {navScrollEffect()};
 
-    $(".nav-menu li a").on('click', scrollTo);
+    // $(".nav-menu li a").on('click', scrollTo);
 
 
 });

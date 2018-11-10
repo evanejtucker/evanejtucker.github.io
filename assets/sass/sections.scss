@@ -3,6 +3,18 @@
 @import "variables";
 
 
+section.contentSection {
+    padding-top: 60px;
+}
+
+.colorSection {
+    background: lightsteelblue;
+}
+
+.whiteSection {
+    background: $white-color;
+}
+
 // header section
 section#header {
     background-image: url($main-header);
@@ -14,7 +26,6 @@ section#header {
 
 // about section
 section#about {
-    background: lightsteelblue;
     height: 300px;
 
     h1 {
@@ -25,7 +36,6 @@ section#about {
 
 // skills section
 section#skills {
-    background: $white-color;
     height: 300px;
 
     h1 {
@@ -36,7 +46,6 @@ section#skills {
 
 // portfolio section
 section#portfolio {
-    background: lightsteelblue;
     height: 300px;
 
     h1 {
@@ -47,7 +56,6 @@ section#portfolio {
 
 // contact section
 section#contact {
-    background: $white-color;
     height: 300px;
 
     h1 {
