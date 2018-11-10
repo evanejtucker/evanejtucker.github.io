@@ -88,6 +88,7 @@ section#about .profilePic {
 section#about .profilePic img {
   height: 300px;
   width: 230px;
+  border-radius: 50%;
 }
 section#about .bioText {
   position: relative;

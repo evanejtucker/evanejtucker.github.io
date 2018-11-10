@@ -23,22 +23,6 @@ $(document).ready(function(){
         }
     }
 
-    // function scrollTo(element) {
-    //     $("a").on('click', function(event) {
-    //         if (this.hash !== "") {
-    //           event.preventDefault();
-    //           var hash = this.hash;
-    //           var targetOffset = $(hash).offset().top;
-    //           $('html, body').animate({
-    //             scrollTop: targetOffset
-    //           }, 800, function(){
-    //             window.location.hash = hash;
-    //           });
-    //         }
-    //       });
-    // }
-
-
     // main process
     // =============================================================================================
     
