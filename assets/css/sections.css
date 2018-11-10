@@ -17,11 +17,19 @@ section#header {
   width: 100%;
 }
 
-section#about {
-  height: 300px;
+section#about .profilePic {
+  text-align: center;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
-section#about h1 {
-  margin-top: 0;
+section#about .profilePic img {
+  height: 300px;
+  width: 230px;
+}
+section#about .bioText {
+  position: relative;
+  font-size: 1.3em;
 }
 
 section#skills {
@@ -61,6 +69,7 @@ section#contact h1 {
   border-top: medium double #333;
   color: #333;
   text-align: center;
+  margin-bottom: 25px;
 }
 .sectionTitle hr:after {
   content: "</>";
@@ -83,6 +92,12 @@ section#contact h1 {
     background-image: url("../images/mountain3.jpeg");
     background-size: cover;
     height: 600px;
+  }
+
+  section#about .profilePic {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
   }
 }
 
