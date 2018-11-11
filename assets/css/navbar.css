@@ -11,11 +11,12 @@
   /* Safari */
   transition: height, 1s;
 }
-.main-nav .page-title {
+.main-nav a.page-title {
   font-family: "Permanent Marker", cursive;
 }
-.main-nav .nav-menu {
+.main-nav .nav-menu li {
   font-family: "Prompt", sans-serif;
+  font-weight: bold;
 }
 
 .sidenav {
