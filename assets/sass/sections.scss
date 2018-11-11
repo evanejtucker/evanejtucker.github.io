@@ -21,8 +21,23 @@ section.contentSection {
 section#header {
     background-image: url($main-header);
     background-size: cover;
-    height: 700px;
+    height:100vh;
     width: 100%;
+
+    .headerTitle {
+        position: absolute;
+        bottom: 24vh;
+        font-size: 2.5em;
+        text-align: center;
+        font-family: $sharpie-font;
+        color: $white-color;
+        width: 100%;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 
@@ -88,6 +103,8 @@ section#contact {
 .sectionTitle {
     text-align: center;
     font-family: $title-font;
+    min-height: 30px;
+    transition: height 2s linear;
     h2 {
         margin-top: 0;
         margin-bottom: 0;
