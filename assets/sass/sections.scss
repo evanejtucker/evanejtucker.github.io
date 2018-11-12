@@ -9,11 +9,50 @@ section.contentSection {
 }
 
 .colorSection {
-    background: $section-color;
+    background: deepskyblue;
 }
 
 .whiteSection {
     background: $white-color;
+}
+
+// section title
+// ---------------------------------------------------------------------------------------->
+.sectionTitle {
+    text-align: center;
+    font-family: $title-font;
+    min-height: 30px;
+    transition: height 2s linear;
+    h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    hr {
+        overflow: visible; /* For IE */
+        padding: 0;
+        border: none;
+        border-top: medium double #333;
+        color: #333;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    hr:after {
+        content: "</>";
+        display: inline-block;
+        position: relative;
+        top: -0.7em;
+        font-size: 1.5em;
+        padding: 0 0.25em;
+        z-index: 1;
+    }
+
+    hr.light:after {
+        background: $white-color;
+    }
+    hr.dark:after {
+        background: deepskyblue;
+    }
 }
 
 // header section
@@ -97,6 +136,11 @@ section#skills {
         margin-bottom: 5px;
         text-decoration: underline;
     }
+
+    img.skillsImage {
+        height: 50px;
+        width: 50px;
+    }
 }
 
 // portfolio section
@@ -120,46 +164,6 @@ section#contact {
     }
 }
 
-// section title
-// ---------------------------------------------------------------------------------------->
-.sectionTitle {
-    text-align: center;
-    font-family: $title-font;
-    min-height: 30px;
-    transition: height 2s linear;
-    h2 {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    hr {
-        overflow: visible; /* For IE */
-        padding: 0;
-        border: none;
-        border-top: medium double #333;
-        color: #333;
-        text-align: center;
-        margin-bottom: 25px;
-    }
-    hr:after {
-        content: "</>";
-        display: inline-block;
-        position: relative;
-        top: -0.7em;
-        font-size: 1.5em;
-        padding: 0 0.25em;
-        z-index: 1;
-    }
-
-    hr.light:after {
-        background: $white-color;
-    }
-    hr.dark:after {
-        background: lightsteelblue;
-    }
-}
-
-
 // Media Queries
 // ---------------------------------------------------------------------------------------->
 
@@ -167,6 +171,7 @@ section#contact {
     section#header {
         background-image: url($small-header);
         background-size: cover;
+        background-attachment: initial;
         height: 600px;
     }
 

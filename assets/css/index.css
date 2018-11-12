@@ -67,11 +67,47 @@ section.contentSection {
 }
 
 .colorSection {
-  background: lightsteelblue;
+  background: deepskyblue;
 }
 
 .whiteSection {
   background: ghostwhite;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-family: "Spicy Rice", cursive;
+  min-height: 30px;
+  transition: height 2s linear;
+}
+.sectionTitle h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.sectionTitle hr {
+  overflow: visible;
+  /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.sectionTitle hr:after {
+  content: "</>";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  z-index: 1;
+}
+.sectionTitle hr.light:after {
+  background: ghostwhite;
+}
+.sectionTitle hr.dark:after {
+  background: deepskyblue;
 }
 
 section#header {
@@ -137,6 +173,10 @@ section#skills p.skillsTitle {
   margin-bottom: 5px;
   text-decoration: underline;
 }
+section#skills img.skillsImage {
+  height: 50px;
+  width: 50px;
+}
 
 section#portfolio h1 {
   margin-top: 0;
@@ -149,46 +189,11 @@ section#contact h1 {
   margin-top: 0;
 }
 
-.sectionTitle {
-  text-align: center;
-  font-family: "Spicy Rice", cursive;
-  min-height: 30px;
-  transition: height 2s linear;
-}
-.sectionTitle h2 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.sectionTitle hr {
-  overflow: visible;
-  /* For IE */
-  padding: 0;
-  border: none;
-  border-top: medium double #333;
-  color: #333;
-  text-align: center;
-  margin-bottom: 25px;
-}
-.sectionTitle hr:after {
-  content: "</>";
-  display: inline-block;
-  position: relative;
-  top: -0.7em;
-  font-size: 1.5em;
-  padding: 0 0.25em;
-  z-index: 1;
-}
-.sectionTitle hr.light:after {
-  background: ghostwhite;
-}
-.sectionTitle hr.dark:after {
-  background: lightsteelblue;
-}
-
 @media only screen and (max-width: 400px) {
   section#header {
     background-image: url("../images/mountain3.jpeg");
     background-size: cover;
+    background-attachment: initial;
     height: 600px;
   }
 
