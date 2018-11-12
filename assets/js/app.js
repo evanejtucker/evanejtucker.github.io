@@ -53,6 +53,30 @@ $(document).ready(function(){
         }
     }
 
+    // dynamically added bio image and text to about section
+    function addAbout() {
+
+        var image = $("<img>");
+        image.attr("src", about.image);
+        image.attr("alt", "bio-image");
+
+        var imageDiv = $("<div>");
+        imageDiv.addClass("profilePic");
+        imageDiv.append(image);
+
+        var bioText = $("<div>");
+        bioText.addClass("bioText")
+        for (var i=0; i<about.text.length; i++) {
+            var p = $("<p>");
+            p.text(about.text[i].p);
+            bioText.append(p);
+        }
+
+        $("#about-container").append(imageDiv, bioText);
+        
+        
+    }
+
     // dynamically add skills to page
     function addSkills() {
         for (var i=0; i<skills.length; i++) {
@@ -86,16 +110,15 @@ $(document).ready(function(){
             }
 
             div.append(ul);
-            $("#skills").append(div);
+            $("#skills-container").append(div);
             
         }
     }
 
 // main process
 // =============================================================================================|
-
-    console.log("loaded second");
-    console.log(skills);
+    
+    addAbout() ;
     addSkills();
 
     $(".profilePic").hide();
