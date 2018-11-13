@@ -115,6 +115,32 @@ section#skills img.skillsImage {
   width: 50px;
 }
 
+section#portfolio .portfolioBox {
+  margin: 0 auto;
+  text-align: center;
+}
+section#portfolio .portfolioPiece {
+  display: inline-block;
+  margin: 10px;
+  width: 250px;
+  vertical-align: top;
+}
+section#portfolio .portfolioLink {
+  height: 250px;
+  background-image: url("../images/friend-finder.jpg");
+  background-size: cover;
+  background-position: center;
+}
+section#portfolio .portfolioLink:hover {
+  opacity: 0.5;
+}
+section#portfolio p.portfolioTitle {
+  font-size: 1.4em;
+}
+section#portfolio p.portfolioInfo {
+  font-size: 1.2em;
+  margin-top: 15px;
+}
 section#portfolio h1 {
   margin-top: 0;
 }
