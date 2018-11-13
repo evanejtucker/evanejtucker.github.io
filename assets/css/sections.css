@@ -126,20 +126,46 @@ section#portfolio .portfolioPiece {
   vertical-align: top;
 }
 section#portfolio .portfolioLink {
-  height: 250px;
-  background-image: url("../images/friend-finder.jpg");
-  background-size: cover;
-  background-position: center;
+  position: relative;
 }
-section#portfolio .portfolioLink:hover {
-  opacity: 0.5;
+section#portfolio .portfolioLink .portfolioImage {
+  width: 100%;
+  height: 250px;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+section#portfolio .portfolioLink .overlay {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+section#portfolio .portfolioLink:hover .portfolioImage {
+  opacity: 0.3;
+}
+section#portfolio .portfolioLink:hover .overlay {
+  opacity: 1;
+}
+section#portfolio .text {
+  color: deepskyblue;
+  font-size: 50px;
+  padding: 16px 32px;
 }
 section#portfolio p.portfolioTitle {
-  font-size: 1.4em;
+  font-size: 1.6em;
+  font-family: "Permanent Marker", cursive;
 }
 section#portfolio p.portfolioInfo {
   font-size: 1.2em;
   margin-top: 15px;
+  font-family: "Prompt", sans-serif;
 }
 section#portfolio h1 {
   margin-top: 0;
@@ -150,6 +176,19 @@ section#contact {
 }
 section#contact h1 {
   margin-top: 0;
+}
+
+#portfolioModal {
+  height: 100vh;
+  width: 90%;
+}
+#portfolioModal .title {
+  width: 100%;
+  text-align: center;
+}
+#portfolioModal .title #closeBtn {
+  margin: 0;
+  float: right;
 }
 
 @media only screen and (max-width: 400px) {

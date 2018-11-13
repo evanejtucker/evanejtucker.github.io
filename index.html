@@ -90,19 +90,32 @@
                 </div>
                 <div class="portfolioBox">
                     <div class="portfolioPiece">
-                        <div class="portfolioLink">
-                            <!-- <img src="assets/images/friend-finder.jpg" alt="portfolio-link" class="portfolioImage"/> -->
+                        <div class="portfolioLink" projectId="1">
+                            <img src="assets/images/friend-finder.jpg" alt="portfolio-link" class="portfolioImage"/>
+                            <div class="overlay">
+                                <div class="text"><i class="fas fa-search-plus"></i></div>
+                            </div>
                         </div>
                         <p class="portfolioTitle">Friend Finder</p>
                         <p class="portfolioInfo">Take the survey to find your Game of Thrones best friend!</p>
                     </div>
                     <div class="portfolioPiece">
-                        <div class="portfolioLink"></div>
+                        <div class="portfolioLink">
+                            <img src="assets/images/friend-finder.jpg" alt="portfolio-link" class="portfolioImage"/>
+                            <div class="overlay">
+                                <div class="text"><i class="fas fa-search-plus"></i></div>
+                            </div>
+                        </div>
                         <p class="portfolioTitle">Clicky Game</p>
                         <p class="portfolioInfo">Test your memory with this Mario themed react game</p>
                     </div>
                     <div class="portfolioPiece">
-                        <div class="portfolioLink"></div>
+                        <div class="portfolioLink">
+                            <img src="assets/images/friend-finder.jpg" alt="portfolio-link" class="portfolioImage"/>
+                            <div class="overlay">
+                                <div class="text"><i class="fas fa-search-plus"></i></div>
+                            </div>
+                        </div>
                         <p class="portfolioTitle">Bamazon</p>
                         <p class="portfolioInfo">Make a few purchases with this Node.js command line app</p>
                     </div>
@@ -133,6 +146,18 @@
             <p id='copywrite'>© 2018 Evan Tucker</p>
         </div>
     </footer>
+
+
+    <!-- Modal Structure -->
+    <div id="portfolioModal" class="modal">
+        <div class="modal-content">
+            <div class="title">
+                <h3>Project Title with a lng title<span><p id="closeBtn"><i class="fas fa-times-circle"></i></p></span></h4>
+                
+            </div>
+            
+        </div>
+    </div>
 
     <!-- javscripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>

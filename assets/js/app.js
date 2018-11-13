@@ -5,8 +5,9 @@ $(document).ready(function(){
 // materialize declarations
 // =============================================================================================
     $('.sidenav').sidenav();
+    $('.modal').modal();
 
-    var firstname = 'evan';
+
 
 // global variables
 // =============================================================================================|
@@ -115,10 +116,16 @@ $(document).ready(function(){
         }
     }
 
+    function modalTrigger() {
+        $(".portfolioLink").on("click", function() {
+            $('#portfolioModal').modal('open');
+        });
+    }
+
 // main process
 // =============================================================================================|
     
-    addAbout() ;
+    addAbout();
     addSkills();
 
     $(".profilePic").hide();
@@ -130,6 +137,8 @@ $(document).ready(function(){
         aboutScrollEffect();
         skillsScrollEffect();
     };
+
+    modalTrigger();
 
 
 
