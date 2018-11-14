@@ -6,6 +6,15 @@ $light-primary-color: rgb(88, 159, 218);
 $section-color: lightsteelblue;
 $dark-grey: darkslategrey;
 
+$colors: (
+    primary: #0F2557,
+    secondary: #28559A,
+    accent: #3778C2,
+    backdrop: #E5E5E5,
+    section: #4B9FE1,
+    warning: FIREBRICK
+);
+
 
 // images
 $main-header: "../images/mountain.jpg";

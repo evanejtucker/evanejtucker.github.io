@@ -4,11 +4,11 @@ section.contentSection {
 }
 
 .colorSection {
-  background: deepskyblue;
+  background: #4B9FE1;
 }
 
 .whiteSection {
-  background: ghostwhite;
+  background: #E5E5E5;
 }
 
 .sectionTitle {
@@ -38,13 +38,13 @@ section.contentSection {
   top: -0.7em;
   font-size: 1.5em;
   padding: 0 0.25em;
-  z-index: 1;
+  z-index: 11;
 }
 .sectionTitle hr.light:after {
-  background: ghostwhite;
+  background: #E5E5E5;
 }
 .sectionTitle hr.dark:after {
-  background: deepskyblue;
+  background: #4B9FE1;
 }
 
 section#header {
@@ -181,14 +181,67 @@ section#contact h1 {
 #portfolioModal {
   height: 100vh;
   width: 90%;
+  text-align: center;
+  font-size: 1.3em;
+  font-family: "Prompt", sans-serif;
+}
+#portfolioModal p {
+  margin: 0;
+}
+#portfolioModal .modalTitle {
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 2.4em;
+}
+#portfolioModal .modalTitle #closeBtn {
+  color: #4B9FE1;
+  transition: color 0.5s ease;
+  float: right;
+  padding-left: 5px;
+}
+#portfolioModal .modalTitle #closeBtn:hover {
+  color: FIREBRICK;
 }
 #portfolioModal .title {
-  width: 100%;
-  text-align: center;
-}
-#portfolioModal .title #closeBtn {
   margin: 0;
-  float: right;
+  margin-bottom: 10px;
+  font-size: 1.9em;
+  font-family: "Permanent Marker", cursive;
+}
+#portfolioModal .projectImage {
+  width: 75%;
+  max-height: 500px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+#portfolioModal .projectDescription {
+  margin-bottom: 25px;
+}
+#portfolioModal .projectFeatures {
+  margin-bottom: 25px;
+}
+#portfolioModal .projectFeatures .featuresList ul {
+  display: inline-block;
+  margin: 10px;
+  width: 200px;
+  vertical-align: top;
+}
+#portfolioModal .projectFeatures .featuresList ul img {
+  height: 30px;
+  width: 30px;
+}
+#portfolioModal .projectFeatures .featuresList ul p {
+  font-size: 1.6em;
+  text-decoration: underline;
+}
+#portfolioModal .projectLinks .links a {
+  width: 37%;
+  background: #4B9FE1;
+}
+#portfolioModal .projectLinks .links a i {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media only screen and (max-width: 400px) {
@@ -203,6 +256,17 @@ section#contact h1 {
     width: 100%;
     text-align: center;
     margin-right: 0;
+  }
+
+  #portfolioModal .projectContent .projectImage {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    margin-bottom: 5px;
+  }
+  #portfolioModal .projectLinks .links a {
+    width: 80%;
+    margin: 10px;
   }
 }
 

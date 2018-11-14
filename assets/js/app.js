@@ -54,6 +54,18 @@ $(document).ready(function(){
         }
     }
 
+    // scroll effect that happens over the portfolio section
+    function portfolioScrollEffect() {
+        var hT = $('#portfolio').offset().top,
+            hH = $('#portfolio').outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+        if (wS > (hT + hH - wH)) {
+            $(".portfolioPiece").addClass("animated rotateInUpLeft");
+            $(".portfolioPiece").show();
+        }
+    }
+
     // dynamically added bio image and text to about section
     function addAbout() {
 
@@ -116,10 +128,61 @@ $(document).ready(function(){
         }
     }
 
+
+    // <div class="portfolioPiece">
+    //     <div class="portfolioLink" projectId="1">
+    //         <img src="assets/images/friend-finder.jpg" alt="portfolio-link" class="portfolioImage"/>
+    //         <div class="overlay">
+    //             <div class="text"><i class="fas fa-search-plus"></i></div>
+    //         </div>
+    //     </div>
+    //     <p class="portfolioTitle">Friend Finder</p>
+    //     <p class="portfolioInfo">Take the survey to find your Game of Thrones best friend!</p>
+    // </div>
+
+    function addPortfolio() {
+        console.log('function hit');
+        for (var i=0; i<portfolio.length; i++) {
+            var portfolioPiece = $("<div>");
+            portfolioPiece.addClass("portfolioPiece");
+            
+            var portfolioLink = $("<div>");
+            portfolioLink.addClass("portfolioLink");
+
+            var image = $("<img>");
+            image.addClass("portfolioImage");
+            image.attr("src", portfolio[i].titleImage);
+            image.attr("alt", "portfolio-link");
+
+            var overlay = $("<div>");
+            overlay.addClass("overlay");
+            var text = $("<div class='text'><i class='fas fa-search-plus'></i></div>")
+            overlay.append(text);
+
+            var portfolioTitle = $("<p>");
+            portfolioTitle.addClass("portfolioTitle");
+            portfolioTitle.text(portfolio[i].projectName);
+
+            var portfolioInfo = $("<p>");
+            portfolioInfo.addClass("portfolioInfo");
+            portfolioInfo.text(portfolio[i].teaser);
+
+            portfolioLink.append(image, overlay);
+            portfolioPiece.append(portfolioLink, portfolioTitle, portfolioInfo);
+            $(".portfolioBox").append(portfolioPiece);
+        }
+    }
+
+    // function to open and close the project modal
+    // to do: add logic to dynamically add project info to modal
     function modalTrigger() {
         $(".portfolioLink").on("click", function() {
             $('#portfolioModal').modal('open');
         });
+
+        $("#closeBtn").on("click", function() {
+            $('#portfolioModal').modal('close');
+        })
     }
 
 // main process
@@ -127,19 +190,20 @@ $(document).ready(function(){
     
     addAbout();
     addSkills();
+    addPortfolio();
 
     $(".profilePic").hide();
     $(".bioText").hide();
     $(".skillsList").hide();
+    $(".portfolioPiece").hide();
 
     window.onscroll = function() {
         navScrollEffect();
         aboutScrollEffect();
         skillsScrollEffect();
+        portfolioScrollEffect()
     };
 
     modalTrigger();
-
-
 
 });

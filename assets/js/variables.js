@@ -36,6 +36,74 @@ var skills = [
         image: "assets/images/otherSkills.png",
         skills: ["Customer Service", "Microsoft Office", "Public Speaking", "Marketing"]
     }
+];
+
+
+// portfolio items to be appended to the portfolio section
+var portfolio = [
+    {
+        projectName: "Friend Finder",
+        titleImage: "assets/images/game-of-thrones.jpg",
+        teaser: "Take the survey to find your Game of Thrones best friend!",
+        descriptionImage: "assets/images/friend-finder.jpg",
+        description: "In this node express app, the user will fill out a 10 question survey, then an alogorithm will match them with their best matched Game of Thrones character",
+        features: [
+            {
+                title: "Front End",
+                image: "assets/images/front-end.png",
+                skills: ["HTML5", "CSS3", "Materialize", "JavaScript", "jQuery"]
+            },
+            {
+                title: "Back End",
+                image: "assets/images/back-end.png",
+                skills: ["Node", "Express"]
+            }
+        ],
+        link1: "https://github.com/evanejtucker/FriendFinder",
+        link2: "https://aqueous-harbor-99526.herokuapp.com/"
+    },
+    {
+        projectName: "Friend Finder",
+        titleImage: "assets/images/game-of-thrones.jpg",
+        teaser: "Take the survey to find your Game of Thrones best friend!",
+        descriptionImage: "assets/images/friend-finder.jpg",
+        description: "In this node express app, the user will fill out a 10 question survey, then an alogorithm will match them with their best matched Game of Thrones character",
+        features: [
+            {
+                title: "Front End",
+                image: "assets/images/front-end.png",
+                skills: ["HTML5", "CSS3", "Materialize", "JavaScript", "jQuery"]
+            },
+            {
+                title: "Back End",
+                image: "assets/images/back-end.png",
+                skills: ["Node", "Express"]
+            }
+        ],
+        link1: "https://github.com/evanejtucker/FriendFinder",
+        link2: "https://aqueous-harbor-99526.herokuapp.com/"
+    },
+    {
+        projectName: "Friend Finder",
+        titleImage: "assets/images/game-of-thrones.jpg",
+        teaser: "Take the survey to find your Game of Thrones best friend!",
+        descriptionImage: "assets/images/friend-finder.jpg",
+        description: "In this node express app, the user will fill out a 10 question survey, then an alogorithm will match them with their best matched Game of Thrones character",
+        features: [
+            {
+                title: "Front End",
+                image: "assets/images/front-end.png",
+                skills: ["HTML5", "CSS3", "Materialize", "JavaScript", "jQuery"]
+            },
+            {
+                title: "Back End",
+                image: "assets/images/back-end.png",
+                skills: ["Node", "Express"]
+            }
+        ],
+        link1: "https://github.com/evanejtucker/FriendFinder",
+        link2: "https://aqueous-harbor-99526.herokuapp.com/"
+    }
 ]
 
 
