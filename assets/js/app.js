@@ -148,6 +148,7 @@ $(document).ready(function(){
             
             var portfolioLink = $("<div>");
             portfolioLink.addClass("portfolioLink");
+            portfolioLink.attr("id", portfolio[i].projectID)
 
             var image = $("<img>");
             image.addClass("portfolioImage");
@@ -173,14 +174,47 @@ $(document).ready(function(){
         }
     }
 
+    // function to update the portfolio modal when the user clicks on a portfolio link
+    function portfolioModal(projectID) {
+        console.log(projectID)
+        for (let i=0; i<portfolio.length; i++) {
+            console.log(portfolio[i].projectID);
+            if (parseInt(projectID) === parseInt(portfolio[i].projectID)) {
+                console.log("matched at: " + portfolio[i].projectName)
+                var project = portfolio[i];
+
+                // update project title
+                $("p.modalTitle").text(project.projectName);
+
+                // update project image
+                $("img.projectImage").attr('src', project.descriptionImage);
+
+                // update the description
+                $(".projectInfo .projectDescription").text(project.description);
+
+                // update project links
+                $(".links a#link1").attr('href', project.link1)
+                $(".links a#link2").attr('href', project.link2)
+
+                
+            }
+        }
+
+    }
+
     // function to open and close the project modal
     // to do: add logic to dynamically add project info to modal
     function modalTrigger() {
         $(".portfolioLink").on("click", function() {
+
+             let id = $(this).attr('id');
+            portfolioModal(id)
             $('#portfolioModal').modal('open');
+
         });
 
         $("#closeBtn").on("click", function() {
+            
             $('#portfolioModal').modal('close');
         })
     }

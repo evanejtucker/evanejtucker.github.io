@@ -42,6 +42,7 @@ var skills = [
 // portfolio items to be appended to the portfolio section
 var portfolio = [
     {
+        projectID: 1,
         projectName: "Friend Finder",
         titleImage: "assets/images/game-of-thrones.jpg",
         teaser: "Take the survey to find your Game of Thrones best friend!",
@@ -63,7 +64,8 @@ var portfolio = [
         link2: "https://aqueous-harbor-99526.herokuapp.com/"
     },
     {
-        projectName: "Friend Finder",
+        projectID: 2,
+        projectName: "Bamazon",
         titleImage: "assets/images/game-of-thrones.jpg",
         teaser: "Take the survey to find your Game of Thrones best friend!",
         descriptionImage: "assets/images/friend-finder.jpg",
@@ -84,10 +86,11 @@ var portfolio = [
         link2: "https://aqueous-harbor-99526.herokuapp.com/"
     },
     {
-        projectName: "Friend Finder",
-        titleImage: "assets/images/game-of-thrones.jpg",
+        projectID: 3,
+        projectName: "Clicky Game",
+        titleImage: "assets/images/mario-kart.jpg",
         teaser: "Take the survey to find your Game of Thrones best friend!",
-        descriptionImage: "assets/images/friend-finder.jpg",
+        descriptionImage: "assets/images/clicky-game.jpg",
         description: "In this node express app, the user will fill out a 10 question survey, then an alogorithm will match them with their best matched Game of Thrones character",
         features: [
             {
