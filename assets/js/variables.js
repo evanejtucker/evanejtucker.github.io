@@ -77,8 +77,8 @@ var portfolio = [
                 skills: ["Node", "MySQL", "Javascript"]
             }
         ],
-        link1: "https://github.com/evanejtucker/Bamazon",
-        link2: "https://aqueous-harbor-99526.herokuapp.com/"
+        link1: "https://github.com/evanejtucker/bamazon",
+        link2: "https://evanejtucker.github.io/bamazon/"
     },
     {
         projectID: 3,
@@ -96,6 +96,28 @@ var portfolio = [
         ],
         link1: "https://github.com/evanejtucker/Clicky-Game",
         link2: "https://evanejtucker.github.io/clicky-game/"
+    },
+    {
+        projectID: 3,
+        projectName: "React Authentication",
+        titleImage: "assets/images/vault-door.jpg",
+        teaser: "A React Authentication app using Passport.js and Mongodb",
+        descriptionImage: "assets/images/key-hole.jpg",
+        description: "Login or signup to this react app using passport.js, and saves information to a Mongodb using mongoose",
+        features: [
+            {
+                title: "Front End",
+                image: "assets/images/front-end.png",
+                skills: ["React", "Reactstrap", "JSX", "AnimateCSS", "Bootstrap", "Axios"]
+            },
+            {
+                title: "Back End",
+                image: "assets/images/back-end.png",
+                skills: ["Node", "Express", "Mongo", "Mongoose", "Passport"]
+            }
+        ],
+        link1: "https://github.com/evanejtucker/react-auth-simple",
+        link2: "https://react-auth-simple.herokuapp.com/"
     }
 ]
 
