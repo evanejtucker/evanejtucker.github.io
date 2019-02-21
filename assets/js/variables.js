@@ -98,7 +98,7 @@ var portfolio = [
         link2: "https://evanejtucker.github.io/clicky-game/"
     },
     {
-        projectID: 3,
+        projectID: 4,
         projectName: "React Authentication",
         titleImage: "assets/images/vault-door.jpg",
         teaser: "A React Authentication app using Passport.js and Mongodb",
@@ -118,6 +118,96 @@ var portfolio = [
         ],
         link1: "https://github.com/evanejtucker/react-auth-simple",
         link2: "https://react-auth-simple.herokuapp.com/"
+    },
+    {
+        projectID: 5,
+        projectName: "Giphy Library",
+        titleImage: "assets/images/giphy.png",
+        teaser: "Search for Gifs using the Giphy API",
+        descriptionImage: "assets/images/giphy-gif.gif",
+        description: "Use one of the suggested seach terms, or create your own to find giphs through the Giphy API in this bootsrap website",
+        features: [
+            {
+                title: "Front End",
+                image: "assets/images/front-end.png",
+                skills: ["HTML", "CSS", "Javascript", "JQuery", "Bootstrap", "AJAX"]
+            }
+        ],
+        link1: "https://github.com/evanejtucker/GifTastic",
+        link2: "https://evanejtucker.github.io/GifTastic/"
+    },
+    {
+        projectID: 6,
+        projectName: "Hangman Game",
+        titleImage: "assets/images/Heroes-and-Villains.jpg",
+        teaser: "Play my heroes and villians hangman game",
+        descriptionImage: "assets/images/marvel.jpg",
+        description: "Use the keyboard to play this themed hangman game built with javascript",
+        features: [
+            {
+                title: "Front End",
+                image: "assets/images/front-end.png",
+                skills: ["HTML", "CSS", "Javascript", "JQuery", "Bootstrap"]
+            }
+        ],
+        link1: "https://github.com/evanejtucker/Hangman-Game",
+        link2: "https://evanejtucker.github.io/Hangman-Game/"
+    },
+    {
+        projectID: 7,
+        projectName: "Train Scheduler",
+        titleImage: "assets/images/train.jpg",
+        teaser: "Add a train to the schedule and find when the next arrival is",
+        descriptionImage: "assets/images/train.gif",
+        description: "Add a train to the Firebase DB, and calculate the next arrival times using moment.js",
+        features: [
+            {
+                title: "Front End",
+                image: "assets/images/front-end.png",
+                skills: ["HTML", "CSS", "Javascript", "JQuery", "Bootstrap", "AJAX", "Moment.js", "Firebase"]
+            }
+        ],
+        link1: "https://github.com/evanejtucker/Hangman-Game",
+        link2: "https://evanejtucker.github.io/Hangman-Game/"
+    },
+    {
+        projectID: 8,
+        projectName: "Trivia Game",
+        titleImage: "assets/images/patriot.jpg",
+        teaser: "Test your knowledge of the US citizenship exam",
+        descriptionImage: "assets/images/us-flag.jpg",
+        description: "Take the quiz and built with javascript and JQuery to see if you would pass the US citizenship exam",
+        features: [
+            {
+                title: "Front End",
+                image: "assets/images/front-end.png",
+                skills: ["HTML", "CSS", "Javascript", "JQuery", "Bootstrap"]
+            }
+        ],
+        link1: "https://github.com/evanejtucker/TriviaGame",
+        link2: "https://evanejtucker.github.io/TriviaGame/"
+    },
+    {
+        projectID: 9,
+        projectName: "Pokedex",
+        titleImage: "assets/images/pokeball.png",
+        teaser: "use the pokedex to search for pokemon from the poedex API",
+        descriptionImage: "assets/images/pokemon.png",
+        description: "Use this CSS created pokedex to search an API for pokemon information",
+        features: [
+            {
+                title: "Front End",
+                image: "assets/images/front-end.png",
+                skills: ["HTML", "CSS", "Javascript", "JQuery", "Bootstrap"]
+            },
+            {
+                title: "Back End",
+                image: "assets/images/back-end.png",
+                skills: ["Node", "Express", "Axios", "Handlebars"]
+            }
+        ],
+        link1: "https://github.com/evanejtucker/pokemon-rpg-v2/",
+        link2: "https://safe-beyond-46425.herokuapp.com/"
     }
 ]
 
