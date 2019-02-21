@@ -66,46 +66,36 @@ var portfolio = [
     {
         projectID: 2,
         projectName: "Bamazon",
-        titleImage: "assets/images/game-of-thrones.jpg",
-        teaser: "Take the survey to find your Game of Thrones best friend!",
-        descriptionImage: "assets/images/friend-finder.jpg",
-        description: "In this node express app, the user will fill out a 10 question survey, then an alogorithm will match them with their best matched Game of Thrones character",
+        titleImage: "assets/images/shopping.jpg",
+        teaser: "Make some purchases in this Node SQL command line app",
+        descriptionImage: "assets/images/shopping-carts.jpg",
+        description: "Use the command line to interact with a SQL databse to make purchases, add products and stock to this online store",
         features: [
-            {
-                title: "Front End",
-                image: "assets/images/front-end.png",
-                skills: ["HTML5", "CSS3", "Materialize", "JavaScript", "jQuery"]
-            },
             {
                 title: "Back End",
                 image: "assets/images/back-end.png",
-                skills: ["Node", "Express"]
+                skills: ["Node", "MySQL", "Javascript"]
             }
         ],
-        link1: "https://github.com/evanejtucker/FriendFinder",
+        link1: "https://github.com/evanejtucker/Bamazon",
         link2: "https://aqueous-harbor-99526.herokuapp.com/"
     },
     {
         projectID: 3,
         projectName: "Clicky Game",
         titleImage: "assets/images/mario-kart.jpg",
-        teaser: "Take the survey to find your Game of Thrones best friend!",
+        teaser: "Play this Mario Kart themed React memory game",
         descriptionImage: "assets/images/clicky-game.jpg",
-        description: "In this node express app, the user will fill out a 10 question survey, then an alogorithm will match them with their best matched Game of Thrones character",
+        description: "In this front end react app, try and click on all the Mario characters without repeating",
         features: [
             {
                 title: "Front End",
                 image: "assets/images/front-end.png",
-                skills: ["HTML5", "CSS3", "Materialize", "JavaScript", "jQuery"]
-            },
-            {
-                title: "Back End",
-                image: "assets/images/back-end.png",
-                skills: ["Node", "Express"]
+                skills: ["React", "Reactstrap", "JSX", "AnimateCSS", "Bootstrap"]
             }
         ],
-        link1: "https://github.com/evanejtucker/FriendFinder",
-        link2: "https://aqueous-harbor-99526.herokuapp.com/"
+        link1: "https://github.com/evanejtucker/Clicky-Game",
+        link2: "https://evanejtucker.github.io/clicky-game/"
     }
 ]
 

@@ -128,20 +128,7 @@ $(document).ready(function(){
         }
     }
 
-
-    // <div class="portfolioPiece">
-    //     <div class="portfolioLink" projectId="1">
-    //         <img src="assets/images/friend-finder.jpg" alt="portfolio-link" class="portfolioImage"/>
-    //         <div class="overlay">
-    //             <div class="text"><i class="fas fa-search-plus"></i></div>
-    //         </div>
-    //     </div>
-    //     <p class="portfolioTitle">Friend Finder</p>
-    //     <p class="portfolioInfo">Take the survey to find your Game of Thrones best friend!</p>
-    // </div>
-
     function addPortfolio() {
-        console.log('function hit');
         for (var i=0; i<portfolio.length; i++) {
             var portfolioPiece = $("<div>");
             portfolioPiece.addClass("portfolioPiece");
@@ -174,13 +161,26 @@ $(document).ready(function(){
         }
     }
 
+    // function to add the product features to the portfolio modal
+    function addProductFeatures(project) {
+        $(".featuresList").html("");
+        for (let i=0; i<project.features.length; i++) {
+            var featuresList = $("<ul>");
+            var featureImage = $("<img src='" + project.features[i].image + "' alt='" + project.features[i].title + "' class='featureImage'/>");
+            var featureTitle = $("<P>" + project.features[i].title + "</p>")
+            featuresList.append(featureImage, featureTitle);
+            for(let k=0; k<project.features[i].skills.length; k++) {
+                var featureItem = $("<li>" + project.features[i].skills[k] + "</li>");
+                featuresList.append(featureItem);
+            }
+            $(".featuresList").append(featuresList);
+        }
+    }
+
     // function to update the portfolio modal when the user clicks on a portfolio link
     function portfolioModal(projectID) {
-        console.log(projectID)
         for (let i=0; i<portfolio.length; i++) {
-            console.log(portfolio[i].projectID);
             if (parseInt(projectID) === parseInt(portfolio[i].projectID)) {
-                console.log("matched at: " + portfolio[i].projectName)
                 var project = portfolio[i];
 
                 // update project title
@@ -191,6 +191,9 @@ $(document).ready(function(){
 
                 // update the description
                 $(".projectInfo .projectDescription").text(project.description);
+
+                // update the project features
+                addProductFeatures(project);
 
                 // update project links
                 $(".links a#link1").attr('href', project.link1)
@@ -206,17 +209,13 @@ $(document).ready(function(){
     // to do: add logic to dynamically add project info to modal
     function modalTrigger() {
         $(".portfolioLink").on("click", function() {
-
              let id = $(this).attr('id');
             portfolioModal(id)
             $('#portfolioModal').modal('open');
-
         });
-
-        $("#closeBtn").on("click", function() {
-            
+        $("#closeBtn").on("click", function() {  
             $('#portfolioModal').modal('close');
-        })
+        });
     }
 
 // main process
