@@ -177,8 +177,9 @@ section#contact {
 section#contact h1 {
   margin-top: 0;
 }
-section#contact .contactBox {
+section#contact div.contactBox {
   margin: 0 auto;
+  margin-top: 30px;
 }
 section#contact .contactItem {
   margin-top: 20px;

@@ -208,6 +208,28 @@ var portfolio = [
         ],
         link1: "https://github.com/evanejtucker/pokemon-rpg-v2/",
         link2: "https://safe-beyond-46425.herokuapp.com/"
+    },
+    {
+        projectID: 10,
+        projectName: "Portfolio V1",
+        titleImage: "assets/images/portfolio-v1.jpg",
+        teaser: "my first custom portfolio website",
+        descriptionImage: "assets/images/portfolio-banner.png",
+        description: "Web dev portfolio site built with a node-express backend, and styled with bootstrap",
+        features: [
+            {
+                title: "Front End",
+                image: "assets/images/front-end.png",
+                skills: ["HTML", "CSS", "Javascript", "JQuery", "Bootstrap"]
+            },
+            {
+                title: "Back End",
+                image: "assets/images/back-end.png",
+                skills: ["Node", "Express", "Handlebars"]
+            }
+        ],
+        link1: "https://github.com/evanejtucker/portfolio-v2",
+        link2: "https://pacific-lake-54593.herokuapp.com/"
     }
 ]
 
