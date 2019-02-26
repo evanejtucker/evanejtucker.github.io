@@ -197,12 +197,9 @@ $(document).ready(function(){
 
                 // update project links
                 $(".links a#link1").attr('href', project.link1)
-                $(".links a#link2").attr('href', project.link2)
-
-                
+                $(".links a#link2").attr('href', project.link2)       
             }
         }
-
     }
 
     // function to open and close the project modal
